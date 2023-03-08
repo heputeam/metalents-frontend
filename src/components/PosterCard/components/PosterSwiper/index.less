@@ -1,0 +1,82 @@
+.swiper-box {
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  overflow: hidden;
+
+  > img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  :global {
+    .swiper {
+      height: 100%;
+    }
+  }
+
+  &:hover {
+    .swiper-controllers {
+      opacity: 1;
+    }
+  }
+}
+
+.swiper-controllers {
+  position: absolute;
+  z-index: 10;
+  // height: 52px;
+  height: fit-content;
+  left: 5px;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  > button {
+    pointer-events: auto;
+  }
+}
+.pager {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  > div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+
+    span {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #7b7d84;
+      transition: all 0.3s ease;
+      margin: 0 2px;
+    }
+    :global {
+      .swiper-pagination-bullet-active {
+        background-color: #fff;
+        transform: scale(1.5);
+      }
+    }
+  }
+}

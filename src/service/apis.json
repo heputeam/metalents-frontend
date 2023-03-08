@@ -1,0 +1,109 @@
+{
+  "/change_password": "/change_password",
+  "/coins/tokens": "/coins/tokens",
+  "/email_check": "/email_check",
+  "/fileupload": "/fileupload",
+  "/get_userinfo": "/get_userinfo",
+  "/login": "/login",
+  "/post/create_or_update": "/post/create_or_update",
+  "/post/get_user_posts": "/post/get_user_posts",
+  "/register": "/register",
+  "/shopname_check": "/shopname_check",
+  "/thirdpart_check": "/thirdpart_check",
+  "/update_banner": "/update_banner",
+  "/update_thirdpart": "/update_thirdpart",
+  "/update_userinfo": "/update_userinfo",
+  "/username_check": "/username_check",
+  "/verifycode": "/verifycode",
+
+  "offers": {
+    "can_create": "/offers/can_create",
+    "create_or_update": "/offers/create_or_update",
+    "update": "/offers/update"
+  },
+  "services": {
+    "comments": "/services/comments",
+    "detail": "/services/detail",
+    "main/create_or_update": "/services/main/create_or_update",
+    "main/update": "/services/main/update",
+    "orders": "/services/orders",
+    "sub/by_main_service": "/services/sub/by_main_service",
+    "sub/create_or_update": "/services/sub/create_or_update"
+  },
+  "general": {
+    "get_banner": "/general/get_banner",
+    "menu": "/general/menu",
+    "search": "/general/search",
+    "search/requests": "/general/search/requests",
+    "search/services": "/general/search/services",
+    "reasons": "/general/reasons",
+    "file_config": "/file_config"
+  },
+  "requests": {
+    "can_create": "/requests/can_create",
+    "cancel": "/requests/cancel",
+    "create": "/requests/create",
+    "details": "/requests/details",
+    "hidden": "/requests/hidden"
+  },
+  "user": {
+    "experience": "/user/experience",
+    "favourite": "/user/favourite",
+    "follow_service": "/user/follow_service",
+    "follow_user": "/user/follow_user",
+    "offers": "/user/offers",
+    "orders": "/user/orders",
+    "profile": "/user/profile",
+    "requests": "/user/requests",
+    "requests/offers": "/user/requests/offers",
+    "services": "/user/services",
+    "update": "/user/update",
+    "update_experience": "/user/update_experience",
+    "final_posts": "/user/final_posts"
+  },
+  "wallet": {
+    "balances": "/wallet/balances",
+    "histories": "/wallet/histories",
+    "margin/withdraw": "/wallet/margin/withdraw",
+    "payment": "/wallet/payment",
+    "withdraw": "/wallet/withdraw"
+  },
+  "chain": {
+    "ar_apply": "chain/ar_apply",
+    "get_mint_sign": "chain/get_mint_sign",
+    "update_post": "chain/update_post",
+    "mint_nft": "chain/mint_nft"
+  },
+
+  "sysConfig": {
+    "sysconfig": "/sysconfig"
+  },
+  "order": {
+    "create": "/order/create",
+    "details": "/order/details",
+    "updateFile": "/order/update_deliver_docs",
+    "complete": "/order/complete",
+    "cancel": "/order/cancel",
+    "cancelDetails": "/order/cancel_details",
+    "sellerAccept": "/order/seller_accept",
+    "submitCustomerService": "/order/submit_customer_service",
+    "public": "/order/public",
+    "filter": "/order/filter",
+    "confirm": "/order/confirm"
+  },
+  "activity": {
+    "list": "/activity/list",
+    "config": "/activity/config",
+    "top_seller": "/activity/top_seller",
+    "rewards": "/activity/rewards",
+    "referrals": "/activity/referrals",
+    "dashboard": "/activity/dashboard",
+    "withdraw": "/activity/point_withdraw",
+    "retweet": "/activity/retweet",
+    "retweet_status": "/activity/retweet_status"
+  },
+  "im": {
+    "get_token": "/message/get_token",
+    "get_cloumn_info": "message/get_cloumn_info"
+  }
+}

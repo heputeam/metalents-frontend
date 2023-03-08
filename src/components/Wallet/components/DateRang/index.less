@@ -1,0 +1,72 @@
+.button-box {
+  width: auto;
+  max-width: 220px;
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid rgba(123, 125, 132, 0.2);
+  box-sizing: border-box;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 18px;
+  position: relative;
+  &:hover {
+    border: 1px solid #111111;
+    div.sub-heading {
+      color: #111111;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+    // 超出省略
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  img {
+    transition: all 0.3s;
+  }
+
+  img.reversal {
+    transform: rotateZ(180deg);
+  }
+
+  div.sub-heading {
+    position: absolute;
+    top: -12px;
+    left: 16px;
+    z-index: 1;
+    font-size: 14px;
+    color: rgba(1, 1, 1, 0.5);
+    background-color: #f6f6f6;
+    padding-right: 5px;
+  }
+}
+
+.popover-container {
+  .popover-box {
+    width: 360px;
+    background: linear-gradient(
+      180deg,
+      rgba(240, 240, 240, 0.87) 0%,
+      rgba(219, 219, 219, 0.5) 100%
+    );
+    backdrop-filter: blur(54px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+
+    &.popover-select-box {
+      width: 240px;
+      padding: 0;
+    }
+  }
+}

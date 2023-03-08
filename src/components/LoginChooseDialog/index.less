@@ -1,0 +1,104 @@
+.account-content {
+  padding: 44px 81px 15px;
+  width: 780px;
+  box-sizing: border-box;
+  .sub-title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 500;
+    color: #444444;
+    p {
+      margin: 0;
+      margin-top: 10px;
+    }
+  }
+  .account-box {
+    display: flex;
+    justify-content: space-between;
+    .email-box {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+      span {
+        margin-bottom: 16px;
+        font-weight: bold;
+        color: var(--ps-primary);
+      }
+    }
+    .social-box {
+      display: flex;
+      flex-direction: column;
+      > span {
+        margin-bottom: 16px;
+        font-weight: bold;
+        color: var(--ps-primary);
+      }
+      .social-content {
+        height: 171px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .social-item {
+        padding: 8px 16px;
+        box-sizing: border-box;
+        height: 51px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        display: flex;
+        cursor: pointer;
+        .item-txt {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 8px;
+          line-height: 1;
+          font-size: var(--ps-base-size);
+          font-weight: 500;
+          &:hover {
+            opacity: 0.8;
+          }
+          span:first-child {
+            color: rgba(0, 0, 0, 0.5);
+          }
+          span:last-child {
+            color: var(--ps-primary);
+          }
+        }
+      }
+    }
+    .web3-box {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+      span {
+        margin-bottom: 16px;
+        font-weight: bold;
+        color: var(--ps-primary);
+      }
+    }
+    .icon-box {
+      width: 171px;
+      height: 171px;
+      border-radius: 10px;
+      background: rgba(180, 180, 180, 0.1);
+    }
+  }
+  .sign-up-tip {
+    margin: 20px 0 14px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #444444;
+    span {
+      cursor: pointer;
+      color: #3a68e0;
+    }
+  }
+}

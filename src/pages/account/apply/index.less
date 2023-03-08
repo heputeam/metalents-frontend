@@ -1,0 +1,173 @@
+.request-apply {
+  width: 1066px;
+  position: relative;
+}
+
+.left-content {
+  width: 1066px;
+}
+
+.right-content {
+  width: 298px;
+  box-sizing: border-box;
+  word-break: break-word;
+  background: url(~@/assets/imgs/requests/mask.png) no-repeat;
+  background-size: 100% 100%;
+  border-radius: 16px;
+  padding: 20px 18px;
+  position: absolute;
+  top: 0;
+  right: -310px;
+  color: #000000;
+}
+
+.content {
+  min-height: 300px;
+  background: #ffffff;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  margin-top: 20px;
+  padding: 16px 76px 60px;
+  box-sizing: border-box;
+
+  .text-area {
+    margin-bottom: -12px;
+  }
+}
+
+.header {
+  text-align: center;
+  font-family: 'HelveticaCondensed';
+  margin-bottom: 54px;
+  font-weight: 700;
+}
+
+.save-btn {
+  width: 240px;
+  margin-top: 78px;
+}
+
+.subcategory-select {
+  label {
+    min-height: 18.75px;
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.label {
+  margin-bottom: 4px;
+  line-height: 18.75px;
+  font-weight: 500;
+}
+
+.mark {
+  color: #e03a3a;
+  line-height: 18.75px;
+}
+
+.days {
+  width: 180px;
+  height: 48px;
+  background: #ffffff;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.active-days {
+  border: 1px solid #000000;
+}
+
+div.input-form-control {
+  align-items: center;
+  :global {
+    div.MuiOutlinedInput-root {
+      padding-right: 10px;
+    }
+
+    fieldset.MuiOutlinedInput-notchedOutline {
+      border-width: 0;
+      box-shadow: 3.33333px 3.33333px 11.6667px rgba(0, 0, 0, 0.1);
+    }
+
+    div.Mui-focused {
+      fieldset.MuiOutlinedInput-notchedOutline {
+        border-width: 1px;
+      }
+    }
+
+    div.Mui-error {
+      fieldset.MuiOutlinedInput-notchedOutline {
+        border-width: 1.5px;
+      }
+    }
+  }
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  max-width: 470px;
+  padding: 10px 20px;
+
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  box-sizing: border-box;
+
+  :global {
+    .MuiOutlinedInput-notchedOutline {
+    }
+  }
+
+  &:hover {
+    :global {
+      .MuiOutlinedInput-notchedOutline {
+        border-width: 1px;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  input {
+    padding: 4px 4px 5px 0;
+  }
+}
+
+p.helper-text {
+  color: #e03a3a;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  height: 23px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.item-box {
+  position: relative;
+}
+
+.description-notice,
+.menu-notice {
+  position: absolute;
+  top: calc(50% - 106px);
+  right: -386px;
+}
+
+.day-notice,
+.price-notice {
+  position: absolute;
+  top: calc(50% - 61px);
+  right: -386px;
+}

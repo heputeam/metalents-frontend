@@ -1,0 +1,152 @@
+.layout-container {
+  display: flex;
+  justify-content: center;
+
+  .service-container {
+    width: 1200px;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  .header-left {
+    width: 772px;
+    height: 508px;
+
+    .service-title {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 26px;
+
+      max-height: 78px;
+      margin-top: 8px;
+      margin-bottom: 10px;
+
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      word-break: break-word;
+    }
+
+    .shop-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 17px;
+
+      .avatar {
+        width: 39px;
+        height: 39px;
+      }
+
+      .rest-shop-info {
+        align-items: center;
+        margin-left: 9px;
+      }
+
+      .shop-name {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        color: #3a68e0;
+        cursor: pointer;
+        max-width: 160px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .stack-item-2 {
+        display: flex;
+        align-items: center;
+        column-gap: 6.2px;
+      }
+
+      .rating {
+        span:last-child {
+          font-size: 19px !important;
+        }
+      }
+    }
+
+    .actions {
+      margin-left: auto;
+
+      .likes-container {
+        width: 44px;
+        height: 44px;
+        background: #ffffff;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5.85036px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+      }
+
+      .likes-container-active {
+        background: #ffcbcb;
+      }
+
+      .share-btn {
+        background: #ffffff;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 9px;
+        width: 44px;
+        height: 44px;
+        margin-left: 25px;
+
+        > img {
+          width: 24px;
+          height: 25px;
+          transition: all 0.3s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-options-container {
+  margin-top: 48px;
+}
+
+.type-tag {
+  border-radius: 28px;
+  color: #ffffff;
+  padding: 7px 20px;
+  width: fit-content;
+  height: 16px;
+
+  p {
+    line-height: 16px;
+  }
+}
+
+.avatar {
+  cursor: pointer;
+}
+
+.loading-box {
+  height: calc(100vh - 130px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loading {
+  }
+}
+
+.stack-item-1 {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,141 @@
+.search {
+  .input-base {
+    height: 49px;
+    width: 260px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: border-color 0.1s ease-in;
+    input {
+      padding-right: 10px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    img {
+      opacity: 0.3;
+    }
+
+    &:hover {
+      border: 1px solid rgba(17, 17, 17, 0.5);
+
+      img {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  div.active-input {
+    border: 1px solid var(--ps-primary);
+
+    &:hover {
+      border: 1px solid var(--ps-primary);
+
+      img {
+        opacity: 1;
+      }
+    }
+
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+div.tooltip-box {
+  background: none;
+  padding-top: 0;
+  padding-left: 0;
+  max-width: none;
+  margin-left: 0;
+}
+
+.search-list {
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 308px;
+  padding: 20px 18px 20px 20px;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.service-box {
+  min-height: 60px;
+  margin-top: 20px;
+}
+
+.shopname-box {
+  min-height: 60px;
+}
+
+.item-box {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+
+    &::after {
+      content: ' ';
+      background: url('~@/assets/imgs/header/arrow-right.svg') no-repeat;
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      right: 0;
+      top: calc(50% - 6px);
+    }
+  }
+}
+
+.service-name,
+.shopname-name {
+  max-width: 220px;
+  max-height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.shopname-name {
+  font-weight: 500;
+  margin-left: 18px;
+}
+
+.view-all {
+  font-size: 14px;
+  margin-top: 20px;
+  color: rgba(17, 17, 17, 0.5);
+  text-align: center;
+
+  span {
+    cursor: pointer;
+  }
+}
+
+.loading {
+  height: 94px;
+}
+
+.no-data {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: rgba(17, 17, 17, 0.5);
+}

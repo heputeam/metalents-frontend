@@ -1,0 +1,159 @@
+.withdraw-content {
+  padding: 40px 40px 40px;
+  width: 480px;
+  .tips {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #444444;
+    line-height: 160%;
+    span {
+      color: #e03a3a;
+    }
+  }
+}
+.form {
+  margin-top: 40px;
+  input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(17, 17, 17, 0.7);
+  }
+  .label {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--ps-text-primary);
+    .balance {
+      font-weight: 400;
+      font-size: 14px;
+      color: var(--ps-text-primary);
+    }
+  }
+  div.input-form-control {
+    .input-style {
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--ps-text-primary);
+    }
+    :global {
+      div.MuiOutlinedInput-root {
+        padding-right: 20px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+      }
+      .MuiOutlinedInput-input {
+        padding: 12.5px 20px;
+      }
+      fieldset.MuiOutlinedInput-notchedOutline {
+        border-width: 0;
+        box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.1);
+      }
+
+      div.Mui-focused {
+        fieldset.MuiOutlinedInput-notchedOutline {
+          border-width: 1px;
+        }
+      }
+
+      div.Mui-error {
+        fieldset.MuiOutlinedInput-notchedOutline {
+          border-width: 1.5px;
+        }
+      }
+    }
+  }
+  div.select-form-control {
+    :global {
+      div.MuiOutlinedInput-root {
+        padding-right: 10px;
+        width: 100%;
+      }
+    }
+  }
+}
+.fill-mataMask-box {
+  display: flex;
+  align-items: center;
+  .fill-metaMask-address {
+    font-size: 14px;
+    color: #3861fb;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  img {
+    margin-left: 6px;
+  }
+}
+.select-network {
+  :global {
+    .MuiSelect-select {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+    }
+  }
+}
+.form-item-code {
+  display: flex;
+  button {
+    margin-top: 24px;
+  }
+}
+.network-info {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 12px;
+  }
+  span {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--ps-text-primary);
+  }
+}
+p.helper-text {
+  color: #e03a3a;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  height: 23px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.label-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .label {
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+  }
+  .label-val {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--ps-text-primary);
+  }
+  .copy-box {
+    display: flex;
+    align-items: center;
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--ps-text-primary);
+    }
+  }
+}
+.confirm-box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  .button-root {
+    background-color: #3861fb;
+  }
+  .btn-disabled {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}

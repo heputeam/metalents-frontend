@@ -1,0 +1,105 @@
+.reward-table {
+  box-shadow: 0px 10px 30px rgba(17, 17, 17, 0.05);
+  border-radius: 20px;
+  background: #ffffff;
+  width: 100%;
+  overflow: hidden;
+
+  .reward-table-header {
+    th {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: #ffffff;
+      background: #a5caf6;
+      padding: 10px 10px;
+
+      &:first-child {
+        border-radius: 20px 0 0 0;
+        padding-left: 40px;
+      }
+
+      &:last-child {
+        border-radius: 0 20px 0 0;
+        padding-right: 40px;
+      }
+    }
+  }
+
+  .table-body {
+    overflow: hidden;
+
+    tr {
+      height: 52px;
+
+      &:nth-child(even) {
+        td {
+          background: #f9f9f9;
+        }
+      }
+
+      &:nth-child(odd) {
+        td {
+          background: var(--ps-whitebg);
+        }
+      }
+    }
+
+    td {
+      color: #111111;
+      padding: 10px 10px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #eeeeee;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+
+      &:first-child {
+        padding-left: 40px;
+      }
+
+      &:last-child {
+        padding-right: 40px;
+      }
+    }
+  }
+}
+
+.loading-box {
+  height: 100%;
+  margin-top: 105px;
+
+  .loading {
+    position: relative;
+    top: calc(50% - 25px);
+  }
+}
+
+.empty-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 105px;
+
+  .empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .str {
+    margin-top: 40px;
+  }
+}
+
+.sign-in {
+  color: #3a68e0;
+  cursor: pointer;
+}
+.seller-name {
+  width: 162px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

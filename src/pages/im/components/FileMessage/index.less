@@ -1,0 +1,82 @@
+.my-file-message {
+  display: flex;
+  margin-right: 10px;
+  width: 360px;
+  height: 76px;
+  // background-color: rgba(58, 104, 224, 0.5);
+  background: #ffffff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 16px 4px 16px 16px;
+  cursor: pointer;
+  .doc-icon {
+    width: 25px;
+    height: 30px;
+    margin: 23px 17px 23px 23px;
+  }
+  .doc-info {
+    margin: 16px 0;
+    .name {
+      line-height: 19px;
+      margin: 0 0 10px 0;
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 16px;
+      // color: #fff;
+      color: #111111;
+      width: 280px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      .omitName {
+        width: 100%;
+        display: flex;
+        .fileBase {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        .fileExtension {
+          flex-shrink: 0;
+        }
+      }
+    }
+    .other-info {
+      display: flex;
+      justify-content: space-between;
+      .size {
+        line-height: 16px;
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        // color: rgba(255, 255, 255, 0.7);
+        color: #999999;
+      }
+      .time {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        // color: rgba(255, 255, 255, 0.4);
+        color: #b8b8b8;
+      }
+    }
+  }
+}
+.notmy-file-message:extend(.my-file-message all) {
+  margin-left: 10px;
+  background: #ffffff;
+  border-radius: 4px 16px 16px 16px;
+  .doc-info {
+    .name {
+      color: #111111;
+    }
+    .other-info {
+      .size {
+        color: #999999;
+      }
+      .time {
+        color: #b8b8b8;
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.container {
+  padding-top: 10px;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  font-family: 'HelveticaCondensed';
+  font-weight: 700;
+}
+
+.filter-btn-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+
+  .filter-btn {
+    width: 172px;
+    height: 40px;
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .active {
+    &:hover {
+      background: var(--ps-primary);
+    }
+  }
+}
+
+.row-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.loading-box,
+.empty-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  height: 785px;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-box {
+  img {
+    width: 147px;
+    height: 198px;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--ps-text-primary);
+  }
+}
+
+.select-container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+
+  li {
+    width: 100%;
+    list-style: none;
+    font-size: 14px;
+    color: rgba(17, 17, 17, 0.5);
+    padding: 9px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &.active,
+    &:hover {
+      background: rgba(255, 255, 255, 0.5);
+      color: var(--ps-primary);
+    }
+  }
+  :global {
+    .MuiPickerStaticWrapper-root {
+      background: transparent;
+      > div {
+        > div:first-child {
+          display: none;
+        }
+      }
+    }
+    .PrivatePickersSlideTransition-root {
+      min-height: 270px;
+    }
+
+    .MuiButtonBase-root-MuiPickersDay-root-MuiDateRangePickerDay-day:not(.Mui-selected) {
+      background: #f6f6f6;
+    }
+  }
+}
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

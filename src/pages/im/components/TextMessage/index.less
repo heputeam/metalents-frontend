@@ -1,0 +1,30 @@
+.my-text-message {
+  display: flex;
+  line-height: 16px;
+  margin-right: 10px;
+  background: rgba(58, 104, 224, 0.5);
+  color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 16px 4px 16px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  .text {
+    max-width: 280px;
+    padding: 16px 15px;
+    word-wrap: break-word;
+    word-break: normal;
+  }
+  .time {
+    padding: 16px 15px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+.notmy-text-message:extend(.my-text-message all) {
+  margin-left: 10px;
+  color: #111;
+  background: #fff;
+  border-radius: 4px 16px 16px 16px;
+  .time {
+    color: #b8b8b8;
+  }
+}

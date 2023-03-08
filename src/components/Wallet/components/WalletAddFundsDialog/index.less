@@ -1,0 +1,127 @@
+.add-funds-content {
+  padding: 40px 35px 40px;
+  width: 470px;
+  .tips {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #444444;
+  }
+}
+.form {
+  input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(17, 17, 17, 0.7);
+  }
+  margin-top: 40px;
+  .label {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--ps-text-primary);
+  }
+  div.input-form-control {
+    :global {
+      div.MuiOutlinedInput-root {
+        padding-right: 20px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+      }
+      .MuiOutlinedInput-input {
+        padding: 12.5px 20px;
+      }
+      fieldset.MuiOutlinedInput-notchedOutline {
+        border-width: 0;
+        box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.1);
+      }
+
+      div.Mui-focused {
+        fieldset.MuiOutlinedInput-notchedOutline {
+          border-width: 1px;
+        }
+      }
+
+      div.Mui-error {
+        fieldset.MuiOutlinedInput-notchedOutline {
+          border-width: 1.5px;
+        }
+      }
+    }
+  }
+  div.select-form-control {
+    :global {
+      div.MuiOutlinedInput-root {
+        padding-right: 10px;
+        width: 100%;
+      }
+    }
+  }
+  .select-network {
+    :global {
+      .MuiSelect-select {
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.network-info {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 12px;
+  }
+  span {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--ps-text-primary);
+  }
+}
+p.helper-text {
+  color: #e03a3a;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  height: 23px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.label-item {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 26px;
+  .label {
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+  }
+  .label-val {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--ps-text-primary);
+  }
+  .copy-box {
+    display: flex;
+    align-items: center;
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--ps-text-primary);
+    }
+  }
+}
+.confirm-box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  .button-root {
+    background-color: #3861fb;
+  }
+  .btn-disabled {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}

@@ -1,0 +1,81 @@
+.service-package {
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  max-width: 470px;
+  padding: 10px 20px;
+
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  box-sizing: border-box;
+
+  :global {
+    .MuiOutlinedInput-notchedOutline {
+    }
+  }
+
+  &:hover {
+    :global {
+      .MuiOutlinedInput-notchedOutline {
+        border-width: 1px;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  input {
+    padding: 4px 0 5px;
+  }
+}
+
+.switch-box {
+  margin-left: 16px;
+}
+.disable-input {
+  background: rgba(201, 201, 201, 0.4);
+  // background: red;
+
+  input:disabled {
+    -webkit-text-fill-color: unset !important;
+    background: none;
+  }
+}
+
+div.input-form-control {
+  :global {
+    div.MuiOutlinedInput-root {
+      padding-right: 10px;
+    }
+
+    fieldset.MuiOutlinedInput-notchedOutline {
+      border-width: 0;
+      box-shadow: 3.33333px 3.33333px 11.6667px rgba(0, 0, 0, 0.1);
+    }
+
+    div.Mui-focused {
+      fieldset.MuiOutlinedInput-notchedOutline {
+        border-width: 1px;
+      }
+    }
+
+    div.Mui-error {
+      fieldset.MuiOutlinedInput-notchedOutline {
+        border-width: 1.5px;
+      }
+    }
+  }
+}
+
+p.helper-text {
+  color: #e03a3a;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  height: 23px;
+  margin-left: 0;
+  margin-right: 0;
+}

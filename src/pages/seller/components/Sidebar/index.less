@@ -1,0 +1,141 @@
+.side-bar {
+  width: 260px;
+}
+
+.side-content {
+  width: 260px;
+  background: #fff;
+  box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  padding: 24px 0;
+
+  overflow-y: auto;
+  position: fixed;
+  top: calc(22px + var(--ps-header-height));
+  bottom: var(--ps-footer-height);
+
+  z-index: 9;
+}
+
+.side-link {
+  display: flex;
+  width: 100%;
+}
+
+.menu {
+  margin-top: 32px;
+
+  .menu-title {
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .link-btn-group {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+
+    button.disabled-btn {
+      background: none;
+    }
+  }
+
+  .link-btn {
+    width: 186px;
+    height: 36px;
+    padding: 8px 5px 9px 24px;
+    margin: 0 37px;
+
+    border-radius: 69px;
+
+    justify-content: flex-start;
+
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 19px;
+    color: rgba(17, 17, 17, 0.5);
+    letter-spacing: 0;
+    text-transform: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      background-color: rgba(123, 125, 132, 0.1);
+    }
+
+    &.active {
+      background: #111111;
+      color: #fff;
+    }
+  }
+}
+
+.send-message-box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+
+  .follow-btn {
+    border-radius: 66px;
+    background: #ff7676;
+    color: var(--ps-text);
+
+    &:hover {
+      background: #db6262;
+      label {
+        cursor: pointer;
+      }
+    }
+
+    .follow {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .count {
+      font-size: 12px;
+      line-height: 14px;
+      margin-left: 8px;
+    }
+  }
+
+  .followed-btn {
+    border: 1px solid #e03a3a;
+    border-radius: 66px;
+    background: none;
+    color: #e03a3a;
+
+    &:hover {
+      border: 1px solid #e03a3a;
+      border-radius: 66px;
+      background: none;
+      color: #e03a3a;
+      label {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .lable-like {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 9;
+  }
+}
+
+.balance {
+  padding: 4px 8px 3px;
+  border: 1px solid rgba(17, 17, 17, 0.5);
+  box-sizing: border-box;
+  border-radius: 36px;
+}

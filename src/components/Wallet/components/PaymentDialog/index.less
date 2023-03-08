@@ -1,0 +1,142 @@
+.payment-content {
+  padding: 40px 35px 40px;
+  width: 470px;
+  .tips {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #444444;
+    span {
+      color: #e03a3a;
+    }
+  }
+  .pay-amount-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .pay-amount {
+      span:first-child {
+        font-weight: 500;
+        font-size: 64px;
+        font-family: 'HelveticaCondensed';
+      }
+      span:last-child {
+        margin-left: 5px;
+        font-size: 16px;
+        color: var(--ps-text-primary);
+      }
+    }
+    .price {
+      font-weight: 700;
+      font-size: 24px;
+      font-family: 'HelveticaCondensed';
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+.form {
+  margin-top: 30px;
+  .label {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--ps-text-primary);
+    .balance {
+      font-weight: 400;
+      font-size: 14px;
+      color: var(--ps-text-primary);
+    }
+  }
+  div.input-form-control {
+    input {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    :global {
+      div.MuiOutlinedInput-root {
+        padding-right: 20px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+      }
+      .MuiOutlinedInput-input {
+        padding: 12.5px 20px;
+      }
+      fieldset.MuiOutlinedInput-notchedOutline {
+        border-width: 0;
+        box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.1);
+      }
+
+      div.Mui-focused {
+        fieldset.MuiOutlinedInput-notchedOutline {
+          border-width: 1px;
+        }
+      }
+
+      div.Mui-error {
+        fieldset.MuiOutlinedInput-notchedOutline {
+          border-width: 1.5px;
+        }
+      }
+    }
+  }
+  div.select-form-control {
+    :global {
+      div.MuiOutlinedInput-root {
+        padding-right: 10px;
+        width: 100%;
+      }
+    }
+  }
+  div.input-balance {
+    :global {
+      .MuiInputBase-input.Mui-disabled {
+        -webkit-text-fill-color: var(--ps-text-primary);
+      }
+      .Mui-error .MuiOutlinedInput-notchedOutline {
+        border-color: #e03a3a;
+      }
+    }
+    .coin-balance {
+      font-weight: 700;
+      font-size: 18px;
+      font-family: 'HelveticaCondensed';
+      color: var(--ps-text-primary);
+    }
+    :global {
+      .MuiOutlinedInput-root {
+        padding-left: 20px;
+      }
+      .MuiInputBase-input {
+        padding-left: 12px;
+      }
+    }
+  }
+}
+.form-item-code {
+  display: flex;
+  button {
+    margin-top: 24px;
+  }
+}
+p.helper-text {
+  color: #e03a3a;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  height: 23px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.confirm-box {
+  display: flex;
+  justify-content: center;
+  .button-root {
+    background-color: #3861fb;
+  }
+  .btn-disabled {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}

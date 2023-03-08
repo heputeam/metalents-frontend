@@ -1,0 +1,113 @@
+.preview-content {
+  padding: 30px;
+  width: 700px;
+  position: relative;
+  .swiper {
+    width: 444px;
+    height: 365px;
+  }
+  .swiper-slide {
+    width: 444px;
+    text-align: center;
+    .slider-img-box {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: 310px;
+      border-radius: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .pay-icon-box,
+      .pause-icon-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -30px;
+        margin-top: -30px;
+        width: 60px;
+        height: 60px;
+      }
+      .play-icon {
+        width: 44px;
+        height: 44px;
+      }
+
+      .pause-icon-box {
+        visibility: hidden;
+      }
+      &:hover {
+        .pause-icon-box {
+          visibility: visible;
+        }
+      }
+    }
+    .slider-file-box {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 310px;
+      background: var(--ps-bgcolor);
+      border-radius: 20px;
+      img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+    .download {
+      margin-top: 30px;
+      display: inline-block;
+      text-decoration: none;
+      .down-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        width: 16px;
+        height: 16px;
+      }
+      span {
+        margin-left: 10px;
+        max-width: 420px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 18px;
+        color: #3861fb;
+      }
+    }
+
+    .file-name {
+      margin-top: 30px;
+      margin-left: 10px;
+      max-width: 420px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+  .previous-btn {
+    position: absolute;
+    top: calc(50% - 55px);
+  }
+  .next-btn {
+    position: absolute;
+    right: 24px;
+    top: calc(50% - 55px);
+  }
+}

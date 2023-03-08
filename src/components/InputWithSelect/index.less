@@ -1,0 +1,68 @@
+.input {
+  box-shadow: 3.3px 3.3px 11.7px rgba(0, 0, 0, 0.1);
+  border-radius: 6.7px;
+
+  &:hover:not(.input-disabled) {
+    // background: rgba(123, 125, 132, 0.1);
+
+    // .notchedOutline {
+    //   border-color: transparent;
+    // }
+  }
+}
+
+.notchedOutline {
+  border-color: transparent;
+}
+
+.input-focused {
+  .notchedOutline {
+    border-width: 1px !important;
+  }
+}
+
+div.input-disabled {
+  background: rgba(201, 201, 201, 0.4);
+
+  .notchedOutline {
+    border-color: transparent !important;
+  }
+}
+
+.input-adornment {
+  color: #000;
+}
+
+.dropdown-btn {
+  margin-left: 4px;
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+}
+
+.menu-paper {
+  margin-top: 28px;
+  margin-left: 14px;
+  box-shadow: 4.7px 4.7px 16.4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  min-width: 244px;
+}
+
+.menu-item-selected {
+  background: none !important;
+  &:hover {
+    background: rgba(123, 125, 132, 0.3) !important;
+  }
+}
+
+.check-img {
+  margin-left: auto;
+}
+
+.menu-item {
+  &:hover {
+    background: rgba(123, 125, 132, 0.3);
+  }
+}

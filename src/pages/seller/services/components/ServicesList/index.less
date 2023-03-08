@@ -1,0 +1,139 @@
+.services-list {
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.table-heade {
+  background: #000000;
+
+  th {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    padding: 11px 16px;
+
+    &:first-child {
+      border-radius: 16px 0 0 0;
+      padding-left: 22px;
+    }
+
+    &:last-child {
+      border-radius: 0 16px 0 0;
+      padding-right: 22px;
+    }
+  }
+}
+
+.table-body {
+  // border-left: 44px solid #fff;
+  // border-right: 44px solid #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  td {
+    background: #ffffff;
+    color: #111111;
+    padding: 17px 16px;
+
+    &:first-child {
+      padding-left: 22px;
+    }
+
+    &:last-child {
+      padding-right: 22px;
+    }
+  }
+}
+
+.service-cell {
+  display: flex;
+  align-items: center;
+}
+
+.service-title {
+  width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  cursor: pointer;
+}
+
+.create-time {
+  color: rgba(17, 17, 17, 0.4);
+  font-size: 12px;
+  line-height: 130%;
+}
+
+.orders {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+div.tooltip {
+  background: #000000;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 8px !important;
+}
+
+span.tooltip-arrow {
+  color: #000000;
+}
+
+.bottom-link {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.link {
+  color: #3a68e0;
+  font-weight: 500;
+}
+
+.dialog-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.confirm-btn {
+  width: 240px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+button.disable-confirm:disabled {
+  background: #c9c9c9;
+  opacity: 0.9;
+}
+
+.service-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 30px;
+}
+
+.empty-box {
+  min-height: 486px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.empty-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 34px;
+}

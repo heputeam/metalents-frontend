@@ -1,0 +1,160 @@
+.container {
+  padding-top: 10px;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  font-family: 'HelveticaCondensed';
+  font-weight: 700;
+}
+
+.first-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-line-right {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-box {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.checkbox-root {
+  color: #000000;
+}
+
+.filter-btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+
+  .filter-btn {
+    width: 202px;
+    height: 40px;
+  }
+
+  .active {
+    &:hover {
+      background: var(--ps-primary);
+    }
+  }
+}
+
+.requests-table {
+  margin-top: 30px;
+
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-radius: 16px;
+
+  .requests-table-header {
+    background: #000000;
+
+    th {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ffffff;
+      padding: 11px 10px;
+
+      &:first-child {
+        border-radius: 16px 0 0 0;
+        padding-left: 22px;
+      }
+
+      &:last-child {
+        border-radius: 0 16px 0 0;
+        padding-right: 22px;
+      }
+    }
+  }
+
+  .table-body {
+    overflow: hidden;
+
+    td {
+      background: #ffffff;
+      color: #111111;
+      padding: 20px 10px;
+
+      &:first-child {
+        padding-left: 22px;
+      }
+
+      &:last-child {
+        padding-right: 22px;
+      }
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.loading-box {
+  height: 500px;
+
+  .loading {
+    position: relative;
+    top: calc(50% - 25px);
+  }
+}
+
+.empty-box {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .person-img {
+      width: 160px;
+    }
+  }
+
+  .str {
+    margin-top: 18px;
+
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: #000;
+  }
+}
+
+p.total-count {
+  margin-top: 42px;
+  margin-left: 22px;
+  font-size: 14px;
+  opacity: 0.5;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.dialog-content {
+  text-align: center;
+  margin: 40px 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(17, 17, 17, 0.5);
+}

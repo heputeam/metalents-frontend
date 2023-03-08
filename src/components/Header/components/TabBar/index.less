@@ -1,0 +1,175 @@
+.tab-bar {
+  height: 54px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding-right: 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.tab {
+  color: #999999;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 17px 16px 10px;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button.dots-menu {
+  position: absolute;
+  right: 0;
+}
+
+div.tooltip-box {
+  background: none;
+  padding-top: 0;
+  padding-left: 0;
+  max-width: none;
+  margin-top: 0 !important;
+  margin-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.menu-box {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  padding: 24px 0;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+
+  &::after {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    border-radius: 0 30px 30px;
+    transform: translateZ(0);
+  }
+}
+
+.long-menu {
+  flex-direction: column;
+  max-height: 500px;
+}
+
+.small-menu {
+  flex-direction: row;
+  min-width: 560px;
+  max-width: 560px;
+}
+
+.menu-item {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #999999;
+  font-size: 16px;
+  position: relative;
+  z-index: 9;
+  padding: 6px 40px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  word-break: break-word;
+  font-weight: 400;
+
+  a {
+    text-decoration: none;
+    color: #999999;
+  }
+
+  &:hover {
+    background: #eeeeee;
+    cursor: pointer;
+  }
+}
+
+.active {
+  // font-weight: bold;
+  text-shadow: 0 0 var(--ps-primary);
+  color: var(--ps-primary);
+}
+
+.active-tab {
+  color: var(--ps-primary);
+
+  &::after {
+    content: ' ';
+    background: url('~@/assets/imgs/header/hook.svg') no-repeat;
+    width: 20px;
+    height: 14px;
+    position: absolute;
+    right: 40px;
+  }
+}
+
+.hover-tab {
+  background: #ffffff;
+  // box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 30px 30px 0 0;
+  padding: 17px 16px 10px;
+
+  > span {
+    opacity: 0;
+  }
+}
+
+.bold-tab {
+  // font-weight: bold;
+  position: absolute;
+  top: calc(50% - 10px);
+  text-shadow: 0 0 var(--ps-primary);
+  color: var(--ps-primary);
+}
+
+.more-tooltip {
+  border-radius: 30px 0 30px 30px;
+  margin-top: 18px;
+}
+
+.menu-title {
+  font-size: 18px;
+  color: var(--ps-primary);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px 0;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 70px;
+  box-sizing: border-box;
+  width: 280px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  word-break: break-word;
+  z-index: 10;
+  cursor: pointer;
+
+  &:hover {
+    background: #eeeeee;
+    cursor: pointer;
+  }
+}

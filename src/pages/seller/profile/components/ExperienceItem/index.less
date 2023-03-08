@@ -1,0 +1,180 @@
+.experience-item-wrap {
+  width: 820px;
+  margin: 0 auto;
+  .label-box {
+    margin-bottom: 10px;
+    label {
+      position: relative;
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--ps-primary);
+      &:after {
+        content: '*';
+        position: absolute;
+        right: -12px;
+        top: 50%;
+        margin-top: -11px;
+        color: #e03a3a;
+      }
+    }
+  }
+}
+.experience-item {
+  position: relative;
+  display: flex;
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+  }
+  .year-box {
+    width: 130px;
+    padding: 12px 30px 0 0;
+    .year-content {
+      display: flex;
+      align-items: center;
+    }
+    .inputBase-root {
+      padding: 0 9px;
+      width: 57px;
+      height: 42px;
+      background: #ffffff;
+      box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+    }
+    .interval {
+      margin: 0 5px;
+    }
+    .year {
+      flex: 1;
+      text-align: center;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--ps-primary);
+    }
+    .line {
+      text-align: center;
+      margin: 20px 0 20px;
+    }
+    .add {
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  .experience-box {
+    padding-top: 15px;
+    padding: 12px 20px 16px;
+    flex: 1;
+  }
+  .active {
+    background: linear-gradient(
+      180deg,
+      rgba(240, 240, 240, 0.87) 0%,
+      rgba(219, 219, 219, 0.5) 100%
+    );
+    backdrop-filter: blur(54px);
+    border-radius: 16px;
+    div.input-root {
+      box-shadow: 0 0 0 1px var(--ps-primary);
+    }
+    div.textare-box {
+      box-shadow: 0 0 0 1px var(--ps-primary);
+    }
+  }
+
+  .form-item {
+    display: flex;
+    align-items: flex-start;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    .item-icon {
+      display: flex;
+      align-items: center;
+      height: 42px;
+
+      .point {
+        padding: 0 12px;
+      }
+    }
+    .input-root {
+      padding: 0 17px;
+      width: 517px;
+      height: 42px;
+      background: #ffffff;
+      box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      input {
+        font-size: 16px;
+        color: var(--ps-primary);
+      }
+    }
+    .textare-box {
+      position: relative;
+      width: 517px;
+      box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+
+      .textarea-root {
+        padding: 11px 17px 26px;
+        box-sizing: border-box;
+        width: 100%;
+        background: #ffffff;
+        border-radius: 6px;
+      }
+      .textarea-input {
+        height: 68px;
+        max-height: 68px;
+        font-size: 16px;
+        color: var(--ps-primary);
+      }
+      .character-len {
+        position: absolute;
+        right: 17px;
+        bottom: 6px;
+        right: 1;
+        font-size: 16px;
+        color: #111111;
+        opacity: 0.3;
+      }
+      :global {
+        .Mui-focused {
+          fieldset.MuiOutlinedInput-notchedOutline {
+            border: 0;
+          }
+        }
+      }
+      .textarea-notchedOutline {
+        border: 0;
+      }
+      .textarea-root:hover .textarea-notchedOutline {
+        border: 0;
+      }
+    }
+  }
+}
+.not-edit-item {
+  margin-bottom: 10px;
+  .year-box {
+    .line {
+      margin: 35px 0 20px;
+    }
+  }
+  .experience-box {
+    border: 1px solid #eee;
+    border-radius: 16px;
+  }
+  .item-text {
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    color: var(--ps-primary);
+  }
+  .item-textare {
+    padding-top: 10px;
+    word-break: break-word;
+    font-size: 16px;
+    color: var(--ps-primary);
+  }
+}

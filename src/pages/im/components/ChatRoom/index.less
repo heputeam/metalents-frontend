@@ -1,0 +1,298 @@
+.root {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 0px 16px 16px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  padding: 22px 20px 21px;
+  border-bottom: 1px solid #eee;
+
+  .not-select-conversation {
+    width: 44px;
+    height: 44px;
+    background: #f6f6f6;
+    border-radius: 44px;
+  }
+}
+
+.base-info {
+  margin-left: 12px;
+
+  .info-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #111111;
+    margin: 0px;
+    padding: 0px;
+    max-width: 500px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .isVerify {
+    margin-left: 6px;
+  }
+
+  .identity-type {
+    margin-left: 6px;
+    padding: 3px 8px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(249.51deg, #99d5e8 -17.83%, #2b54bc 140.55%);
+    border-radius: 10px;
+  }
+
+  .sub-info {
+    margin-top: 10px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    .country {
+      font-size: 12px;
+      color: #999;
+    }
+
+    .time {
+      font-size: 12px;
+      color: #999;
+      margin-left: 6px;
+
+      img {
+        vertical-align: middle;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.inner {
+  position: relative;
+  padding: 10px 0px;
+  box-sizing: border-box;
+  flex: 1;
+  flex-wrap: wrap;
+  background: radial-gradient(
+        17.88% 28.52% at 50.7% 100%,
+        rgba(65, 116, 253, 0.1) 0%,
+        rgba(65, 116, 253, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        37.33% 97.17% at 3.9% 76.08%,
+        rgba(58, 224, 144, 0.05) 0%,
+        rgba(58, 224, 144, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        29.92% 47.07% at 88.6% 90.99%,
+        rgba(190, 99, 255, 0.1) 0%,
+        rgba(188, 92, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        54.97% 71.9% at 90.23% 0%,
+        rgba(65, 95, 253, 0.2) 0%,
+        rgba(58, 224, 144, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    #f6fcf9;
+
+  .loading-container {
+    position: absolute;
+    bottom: 10px;
+    left: 46%;
+
+    .loading {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .no-message-tip {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(217, 217, 217, 0.3);
+    border-radius: 10px;
+
+    p {
+      line-height: 24px;
+      padding: 26px 18px;
+      font-size: 16px;
+      text-align: center;
+      color: #999;
+      word-break: break-word;
+      word-spacing: 2px;
+    }
+  }
+}
+
+.scrollable {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  max-height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  padding: 10px 0px;
+
+  .date-time {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #111111;
+    margin-bottom: 10px;
+  }
+}
+
+.date-text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 18px 0px 10px 0px;
+}
+
+.myBox {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.noMyBox:extend(.myBox) {
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.avatar {
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.messageItemBox {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #fff;
+  border-radius: 0px 0px 16px 0px;
+  position: relative;
+  height: 140px;
+}
+
+.textarea {
+  width: 100%;
+  margin: 0px;
+  padding: 50px 20px 20px 20px;
+  height: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border-width: 0px;
+  font-family: 'Roboto';
+
+  &:empty:before {
+    content: attr(placeholder);
+    color: gray;
+  }
+
+  &:focus:before {
+    content: none;
+  }
+
+  .emoji-image {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+}
+
+.textarea::-webkit-input-placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+  font-size: 14px;
+}
+
+.textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+  font-size: 14px;
+}
+
+.textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #999;
+  font-size: 14px;
+}
+
+.textarea:disabled {
+  background: #fff;
+}
+
+.actions {
+  position: absolute;
+  padding: 20px 0px 0px 20px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    display: inline-block;
+  }
+}
+
+.sendBox {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #fff;
+  padding: 0px 20px 20px;
+}
+
+.top-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.other-avatar {
+  &:hover {
+    cursor: default;
+  }
+}
+
+.top-btn {
+  padding: 0 10px;
+  height: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  margin-left: 6px;
+
+  span {
+    margin-left: 4px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}

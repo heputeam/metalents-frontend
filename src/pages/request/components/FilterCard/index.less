@@ -1,0 +1,72 @@
+.filter-card-wrap {
+  padding: 26px 30px;
+  width: 100%;
+  box-sizing: border-box;
+  background: radial-gradient(
+        10.89% 79% at 89.21% -26.33%,
+        rgba(65, 116, 253, 0.1) 0%,
+        rgba(65, 116, 253, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        15.55% 68.67% at 39.67% 100%,
+        rgba(65, 116, 253, 0.1) 0%,
+        rgba(65, 116, 253, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        14.87% 100% at 67.33% 0%,
+        rgba(58, 224, 144, 0.05) 0%,
+        rgba(58, 224, 144, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        13.17% 101.36% at 0.87% 9.67%,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0.15) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        21.4% 173.93% at 88.6% 90.99%,
+        rgba(190, 99, 255, 0.1) 0%,
+        rgba(188, 92, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    #f2fcf7;
+  /* 01 */
+  box-shadow: 4.68518px 4.68518px 16.3981px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.item-box {
+  display: flex;
+
+  .label {
+    flex-basis: 100px;
+    min-width: 100px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--ps-primary);
+  }
+
+  .label-content {
+    button {
+      border-radius: 20px;
+      padding: 6px 13px;
+      line-height: 16px;
+      font-weight: 400;
+      font-size: 14px;
+      color: #333333;
+    }
+
+    .active {
+      color: #fff;
+      background-color: var(--ps-primary);
+
+      &:hover {
+        color: #fff;
+        background: var(--ps-primary);
+      }
+    }
+  }
+}

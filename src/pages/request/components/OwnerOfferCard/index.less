@@ -1,0 +1,146 @@
+.offer-wrap {
+  margin-bottom: 20px;
+  padding: 15px 40px 30px;
+  background: #ffffff;
+  box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  .user-info {
+    display: flex;
+    align-items: center;
+    .title {
+      font-weight: 700;
+      font-size: 24px;
+      color: var(--ps-text-primary);
+    }
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+    }
+    .user-name {
+      margin: 0 12px;
+      font-weight: 700;
+      font-size: 16px;
+      color: #000000;
+    }
+    .level {
+      padding: 0 5px;
+      background: linear-gradient(249.51deg, #99d5e8 -17.83%, #2b54bc 140.55%);
+      line-height: 15px;
+      border-radius: 36px;
+      color: #fff;
+      font-weight: 400;
+      font-size: 12px;
+    }
+    .message-box {
+      margin-left: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 106px;
+      height: 32px;
+      background: #000000;
+      border-radius: 20px;
+      cursor: pointer;
+      img {
+        width: 18px;
+        height: 18px;
+      }
+      span {
+        margin-left: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+  .offer-box {
+    margin-top: 16px;
+    .label {
+      font-weight: 500;
+      font-size: 16px;
+      color: #000;
+    }
+  }
+  .offer-content {
+    display: flex;
+    margin-top: 10px;
+    min-height: 115px;
+    .reply-box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      label {
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+      }
+      p {
+        margin: 0;
+        word-break: break-word;
+        line-height: 26px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #333;
+      }
+      .time {
+        margin-top: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(31, 25, 27, 0.4);
+      }
+    }
+    .price-time-box {
+      width: 230px;
+      margin-left: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .price-box {
+        text-align: right;
+        font-weight: 400;
+        font-size: 14px;
+        color: #999;
+        .price {
+          margin-right: 6px;
+          font-weight: 700;
+          font-size: 24px;
+          font-family: 'HelveticaCondensed';
+          color: #000000;
+        }
+      }
+      .delivery-time {
+        margin-top: 8px;
+        text-align: right;
+        font-weight: 400;
+        font-size: 17px;
+        color: #000;
+      }
+      .button-box {
+        display: flex;
+        justify-content: space-between;
+        button {
+          padding: 0;
+          width: 106px;
+          height: 30px;
+          border-radius: 20px;
+          font-weight: 500;
+          font-size: 14px;
+        }
+        :global {
+          .Mui-disabled {
+            color: #fff;
+            background: rgba(0, 0, 0, 0.3);
+            border: 0;
+          }
+        }
+      }
+      .accept-button-box,
+      .reject-button-box {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

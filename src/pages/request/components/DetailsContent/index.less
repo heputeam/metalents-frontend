@@ -1,0 +1,222 @@
+.details-wrap {
+  margin-top: 40px;
+  padding: 30px 40px;
+  box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background: linear-gradient(
+    203.86deg,
+    #f2fbf6 1.01%,
+    #f4f9f6 29.2%,
+    #e8f4fa 64.05%,
+    #f0e9f8 99.42%
+  );
+  .head-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .status {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translate(0, -50%);
+      font-weight: 500;
+      font-size: 18px;
+      color: #fac917;
+      &:after {
+        content: '';
+        position: absolute;
+        left: -16px;
+        top: 50%;
+        margin-top: -4px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #fac917;
+      }
+    }
+    .Waiting {
+      color: #fac917;
+      &:after {
+        background: #fac917;
+      }
+    }
+    .Closed {
+      color: #7b7d84;
+      &:after {
+        background: #7b7d84;
+      }
+    }
+    .Completed {
+      color: #3ae090;
+      &:after {
+        background: #3ae090;
+      }
+    }
+    h5 {
+      margin: 0;
+      padding: 0;
+      font-weight: 500;
+      font-size: 24px;
+      color: #000;
+    }
+    .category {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      max-width: 350px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-weight: 400;
+      font-size: 16px;
+      color: #666;
+    }
+  }
+}
+.details-content {
+  .info-box {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .user-info {
+      display: flex;
+      align-items: center;
+      .user-box {
+        display: flex;
+        align-items: center;
+      }
+      .avatar {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+      }
+      .user-name {
+        margin: 0 12px;
+        max-width: 230px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 700;
+        font-size: 16px;
+        color: #000000;
+      }
+      .level {
+        padding: 0 5px;
+        background: linear-gradient(
+          249.51deg,
+          #99d5e8 -17.83%,
+          #2b54bc 140.55%
+        );
+        line-height: 15px;
+        border-radius: 36px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 12px;
+      }
+      .message-box {
+        margin-left: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 106px;
+        height: 32px;
+        background: #000000;
+        border-radius: 20px;
+        cursor: pointer;
+        img {
+          width: 18px;
+          height: 18px;
+        }
+        span {
+          margin-left: 5px;
+          font-weight: 400;
+          font-size: 14px;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .request-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .selection-time {
+      display: flex;
+      align-items: center;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+      span {
+        margin-left: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+      }
+    }
+    .progress-box {
+      height: 5px;
+      background: #e5e5e5;
+      .progress {
+        width: 0;
+        height: 5px;
+        background: #3ae090;
+      }
+    }
+  }
+  .description-box {
+    margin-top: 30px;
+    label {
+      font-weight: 500;
+      font-size: 16px;
+      color: #000;
+    }
+    p {
+      margin: 10px 0 0;
+      word-break: break-word;
+      line-height: 26px;
+      font-weight: 400;
+      font-size: 14px;
+      color: #333;
+    }
+  }
+  .portfolio-box {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    .price-time-box {
+      display: flex;
+      flex-direction: column;
+    }
+    .price-box {
+      text-align: right;
+      font-weight: 400;
+      font-size: 14px;
+      color: #999;
+      .price {
+        margin-right: 6px;
+        font-weight: 700;
+        font-size: 30px;
+        font-family: 'HelveticaCondensed';
+        color: #000000;
+      }
+    }
+    .delivery-time {
+      margin-top: 8px;
+      font-weight: 400;
+      font-size: 17px;
+      color: #000;
+    }
+  }
+  .button-box {
+    text-align: right;
+    :global {
+      .Mui-disabled {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}

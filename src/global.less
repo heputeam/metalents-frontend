@@ -1,0 +1,101 @@
+@import url(~@/assets/fonts/index.less);
+
+/**
+  统一公司前缀：--ps-
+**/
+:root {
+  --toastify-toast-width: auto;
+  // sizes
+  --ps-base-size: 16px;
+  --ps-header-height: 76px;
+  --ps-footer-height: 110px;
+}
+
+:root[data-theme='light'] {
+  // bg colors( --ps-bg-xxx)
+  --ps-bgcolor: #f6f6f6;
+  --ps-primary: #111111;
+  --ps-secondary: #999999;
+  --ps-whitebg: #ffffff;
+
+  --ps-strong: #3861fb;
+  --ps-strong-hover: #2f4ec0;
+  --ps-disable: #999999;
+
+  // text colors (--ps-text-xx)
+  --ps-text: #fff;
+  --ps-text-primary: #111111;
+  --ps-text-error: #e03a3a;
+
+  // toast
+  --ps-toast-success: #3ae090;
+  --ps-toast-warn: #f5bf76;
+  --ps-toast-error: #e03a3a;
+}
+
+:root[data-theme='dark'] {
+  // bg colors( --ps-bg-xxx)
+  --ps-primary: red;
+  --ps-secondary: red;
+  --ps-bgcolor: red;
+  --ps-whitebg: red;
+
+  // text colors (--ps-text-xx)
+
+  --ps-toast-success: #3ae090;
+  --ps-toast-warn: #f5bf76;
+  --ps-toast-error: #e03a3a;
+  // button colors (--ps-button-xxx)
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ps-primary);
+  background: var(--ps-bgcolor);
+  font-size: var(--ps-base-size);
+  font-family: 'Roboto';
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: var(--ps-header-height);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.paper-container {
+  background: #fff;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+input:-webkit-autofill {
+  transition: background-color 50000s ease-in-out 0s;
+}
+
+a {
+  text-decoration: none;
+}
+
+a[data-underline] {
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.price-num {
+  font-family: 'Roboto Condensed';
+}

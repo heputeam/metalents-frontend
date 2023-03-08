@@ -1,0 +1,86 @@
+.view-order-list-dialog {
+  width: 560px;
+  padding: 40px 10px 0px;
+  box-sizing: border-box;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--ps-primary);
+  margin-left: 8px;
+  &:first-child {
+    margin-left: 12px;
+  }
+}
+
+.order-list {
+}
+
+.loading {
+  height: 100px;
+}
+.service-loading {
+  height: 100%;
+}
+
+.order-item {
+  height: 64px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 21px;
+  padding: 14px 12px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  // column-gap: 5px;
+  cursor: pointer;
+
+  > button {
+    left: -5px;
+  }
+}
+
+.user-name {
+  width: 110px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--ps-primary);
+}
+
+.price {
+  width: 120px;
+  margin-left: 10px;
+}
+
+.status {
+  width: 120px;
+  margin-left: 10px;
+}
+
+.btn {
+  margin-left: 10px;
+  width: 102px;
+  height: 28px;
+  padding-left: 0;
+  padding-right: 0;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 39px;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--ps-text);
+}

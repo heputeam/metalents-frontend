@@ -1,0 +1,193 @@
+.balance-content {
+  display: flex;
+  justify-content: space-between;
+}
+.coin-card-wrap {
+  padding: 30px;
+  box-sizing: border-box;
+  width: 562px;
+  min-height: 280px;
+  border-radius: 16px;
+  background: radial-gradient(
+      19.39% 70.23% at 50.7% 100%,
+      rgba(65, 116, 253, 0.1) 0%,
+      rgba(65, 116, 253, 0) 100%
+    ),
+    radial-gradient(
+      36.38% 90.7% at 3.9% 76.08%,
+      rgba(96, 255, 178, 0.05) 0%,
+      rgba(87, 255, 174, 0) 100%
+    ),
+    radial-gradient(
+      24.42% 110.08% at 88.6% 90.99%,
+      rgba(190, 99, 255, 0.1) 0%,
+      rgba(188, 92, 255, 0) 100%
+    ),
+    radial-gradient(
+      30.11% 101.79% at 92.72% -15.23%,
+      rgba(65, 95, 253, 0.2) 0%,
+      rgba(58, 224, 144, 0) 100%
+    ),
+    #f1faf6;
+  box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.1);
+
+  .coin-card-box {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 184px;
+    > div {
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+    > div:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+  .buttons-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .withdraw-btn {
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+.income-stats-box {
+  padding: 30px;
+  min-height: 280px;
+  width: 318px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  background: radial-gradient(
+      46.96% 46.96% at 2.52% 0%,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      46.96% 46.96% at 2.52% 0%,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      30.11% 101.79% at 92.72% -15.23%,
+      rgba(145, 199, 165, 0.1) 0%,
+      rgba(134, 206, 171, 0) 100%
+    ),
+    #eaf8ef;
+  background-color: #e7faf8;
+  .title {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--ps-text-primary);
+  }
+  .total-income {
+    margin: 24px 0;
+    height: 104px;
+    text-align: center;
+    line-height: 104px;
+    font-weight: 700;
+    font-size: 36px;
+    font-family: 'HelveticaCondensed';
+    color: var(--ps-text-primary);
+    background: url(~@/assets/imgs/wallet/lineChart.svg) no-repeat;
+  }
+  .income-box {
+    display: flex;
+    justify-content: space-between;
+    .income-item {
+      display: flex;
+      flex-direction: column;
+      .tit {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(17, 17, 17, 0.3);
+      }
+      .amount {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        font-family: 'HelveticaCondensed';
+        color: var(--ps-text-primary);
+      }
+    }
+  }
+}
+.tooltip-box {
+  background: var(--ps-primary);
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+.tooltip-arrow:before {
+  color: var(--ps-text-primary);
+}
+
+.seller-coin-card {
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 154px;
+  height: 72px;
+  box-sizing: border-box;
+  background: #d3f1e8;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  .coin-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-weight: 500;
+      font-size: 16px;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+  }
+  .balance {
+    margin-top: 7px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'HelveticaCondensed';
+    color: var(--ps-text-primary);
+  }
+}
+.USDT-sty {
+  background: #d3f1e8;
+  .coin-name {
+    color: #26a17b;
+  }
+}
+.ETH-sty {
+  background: #e3e9ff;
+
+  .coin-name {
+    color: #627eea;
+  }
+}
+.BUSD-sty {
+  background: #fbf0d6;
+  .coin-name {
+    color: #f3ba2f;
+  }
+}
+.BNB-sty {
+  background: #ffebe0;
+  .coin-name {
+    color: #f3ba2f;
+  }
+}
+.AUCTION-sty {
+  background: #ddedfb;
+  .coin-name {
+    color: #666666;
+  }
+}

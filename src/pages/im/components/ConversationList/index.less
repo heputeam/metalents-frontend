@@ -1,0 +1,111 @@
+.inbox-container {
+  flex-basis: 340px;
+  border-right: 1px solid #eee;
+  .root {
+    background-color: #fff;
+    border-radius: 0px 0px 0px 16px;
+    padding: 0px 12px 0px 12px;
+    margin: 0px;
+    height: calc(100% - 88px - 12px);
+    padding-bottom: 12px;
+    overflow-y: auto;
+    li {
+      list-style: none;
+      border-radius: 10px;
+      padding: 14px 20px;
+      display: flex;
+      position: relative;
+      cursor: pointer;
+      background: #fff;
+      .top {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border-top: 14px solid rgba(58, 104, 224, 0.3);
+        border-left: 14px solid transparent;
+        border-radius: 1px 0 0 0;
+      }
+      .item-img-Box {
+        position: relative;
+        margin-right: 12px;
+      }
+      .item-info-box {
+        flex: 1;
+        .item-info-box-inner {
+          display: flex;
+          justify-content: space-between;
+          .info-title {
+            max-width: 90px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #111111;
+            margin: 0px;
+            padding: 0px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+          .isVerify {
+            margin-left: 6px;
+          }
+          .identity-type {
+            margin-left: 6px;
+            padding: 3px 8px;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: #fff;
+            background: linear-gradient(
+              249.51deg,
+              #99d5e8 -17.83%,
+              #2b54bc 140.55%
+            );
+            border-radius: 10px;
+          }
+          .time {
+            font-size: 14px;
+            line-height: 16px;
+            text-align: right;
+            color: #b8b8b8;
+          }
+        }
+        .latest-message-text {
+          margin-top: 6px;
+          img {
+            margin-right: 6px;
+          }
+          span {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #999999;
+            max-width: 174px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+    li.select {
+      background: #f2f2f3;
+    }
+  }
+  .inbox {
+    padding: 30px 0px 20px 36px;
+    height: 88px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    background: #fff;
+    box-sizing: border-box;
+    .custom-muiBadge-badge {
+      top: 4px;
+      right: -4px;
+    }
+  }
+}

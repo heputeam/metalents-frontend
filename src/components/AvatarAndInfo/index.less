@@ -1,0 +1,99 @@
+.avatar-and-info {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+div.avatar {
+  width: 107px;
+  height: 107px;
+  margin-left: 76px;
+}
+
+.level {
+  width: fit-content;
+  padding: 0.2px 7.9px;
+  border-radius: 28px;
+  background: linear-gradient(249.51deg, #99d5e8 -17.83%, #2b54bc 140.55%);
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+
+  > span {
+    color: #ffffff;
+    line-height: 14px;
+  }
+}
+
+.user-name-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.user-name {
+  margin-top: 11px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  max-width: 160px;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  line-height: 21px;
+  word-break: break-word;
+}
+
+.country-and-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+
+  .flag {
+    height: 16px;
+  }
+
+  .country-name {
+    margin-left: 8px;
+    line-height: 14px;
+  }
+
+  .time {
+    margin-left: 4px;
+    line-height: 14px;
+  }
+}
+
+.rating-and-orders-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 5px;
+
+  .star-img {
+    width: 11px;
+    height: 10px;
+  }
+
+  .rating {
+    margin-left: 4px;
+    margin-top: 2px;
+    line-height: 14px;
+  }
+
+  .orders-count {
+    margin-left: 12px;
+    margin-top: 2px;
+    line-height: 14px;
+  }
+}

@@ -1,0 +1,102 @@
+.make-edit-content {
+  padding: 35px 45px;
+  width: 470px;
+  .label {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--ps-primary);
+  }
+
+  div.input-form-control {
+    :global {
+      div.MuiOutlinedInput-root {
+        padding-right: 20px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+      }
+      .MuiOutlinedInput-input {
+        padding: 12.5px 20px;
+      }
+      fieldset.MuiOutlinedInput-notchedOutline {
+        border-width: 0;
+        box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.1);
+      }
+
+      div.Mui-focused {
+        fieldset.MuiOutlinedInput-notchedOutline {
+          border-width: 1px;
+        }
+      }
+
+      div.Mui-error {
+        fieldset.MuiOutlinedInput-notchedOutline {
+          border-width: 1.5px;
+        }
+      }
+    }
+  }
+  div.select-form-control {
+    :global {
+      div.MuiOutlinedInput-root {
+        padding-right: 10px;
+        width: 100%;
+      }
+    }
+  }
+  .textare-box {
+    position: relative;
+    width: 100%;
+    box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.1);
+
+    .textarea-root {
+      padding: 11px 17px 26px;
+      box-sizing: border-box;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+    }
+    .textarea-input {
+      height: 65px;
+      max-height: 65px;
+      font-size: 16px;
+      color: var(--ps-primary);
+    }
+    .character-len {
+      position: absolute;
+      right: 17px;
+      bottom: 6px;
+      right: 1;
+      font-size: 16px;
+      color: #111111;
+      opacity: 0.3;
+    }
+    :global {
+      fieldset.MuiOutlinedInput-notchedOutline {
+        border-width: 0;
+        box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.1);
+      }
+      div.Mui-focused {
+        fieldset.MuiOutlinedInput-notchedOutline {
+          border-width: 1px;
+        }
+      }
+      div.Mui-error {
+        fieldset.MuiOutlinedInput-notchedOutline {
+          border-width: 1.5px;
+        }
+      }
+    }
+  }
+  .submit-button {
+    text-align: center;
+  }
+  p.helper-text {
+    color: #e03a3a;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    height: 23px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

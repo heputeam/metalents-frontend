@@ -1,0 +1,35 @@
+.pagination-root {
+  button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--ps-text-primary);
+  }
+
+  :global {
+    button.Mui-selected {
+      background: var(--ps-primary);
+      color: var(--ps-text);
+
+      &:hover {
+        background: var(--ps-primary);
+        color: var(--ps-text);
+      }
+    }
+
+    .MuiPaginationItem-icon {
+      width: 32px;
+      height: 32px;
+    }
+
+    .MuiPaginationItem-ellipsis {
+      font-size: 20px;
+      color: #000000;
+    }
+  }
+}
