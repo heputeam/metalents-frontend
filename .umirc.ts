@@ -1,4 +1,3 @@
-import { configResponsive } from 'ahooks';
 import { defineConfig } from 'umi';
 
 export default defineConfig({

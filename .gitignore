@@ -21,6 +21,8 @@
 /.env
 /.prettierrc
 
+
 .vscode
+.yarn
 
 TODO.md

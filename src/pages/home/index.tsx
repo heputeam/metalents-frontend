@@ -1,7 +1,5 @@
 import BannerSwiper from './components/BannerSwiper';
 import styles from './index.less';
-import incisionBgPng from './assets/incision-bg.png';
-import requestCenterPng from './assets/requestCenter.png';
 import { budgetMax, ISearchFilterValue } from './components/SelectOptions';
 import SelectOptions from './components/SelectOptions';
 import Products from './components/Products';
@@ -15,10 +13,8 @@ import {
 import Toast from '@/components/Toast';
 import { useEffect, useState } from 'react';
 import { useRequest } from 'ahooks';
-import Button from '@/components/Button';
 import { getCanCreate } from '@/service/requests';
 import { Container, Grid, Typography } from '@mui/material';
-import { IUserInfo } from '@/service/user/types';
 import { ESortBy } from './components/SelectOptions/config';
 
 const HomePage = () => {

@@ -85,7 +85,6 @@ export const useInitWeb3 = () => {
   const { chainId, account, library } = useWeb3React();
 
   useEffect(() => {
-    console.log('-------------------------------', account, chainId);
     library?.currentProvider?.on('accountsChanged', (accounts: string[]) => {
       if (account !== accounts[0]) {
         location.reload();
